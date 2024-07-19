@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(44, 44, 78);
+    font-family: 'Perfect DOS VGA 437';
+}  
+
+@font-face {
+    font-family: 'Perfect DOS VGA 437';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Perfect DOS VGA 437'), url('../font/Perfect DOS VGA 437.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Perfect DOS VGA 437 Win';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Perfect DOS VGA 437 Win'), url('../font/Perfect DOS VGA 437 Win.woff') format('woff');
+    }
