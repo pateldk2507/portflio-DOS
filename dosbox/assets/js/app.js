@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (window.innerWidth <= 1500) {
         menu.classList.remove("show");
       }else{
-        menu.classList.toggle('show');
+        menu.classList.add('show');
       }
     }
     handleScreenWidth();
