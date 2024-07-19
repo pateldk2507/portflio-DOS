@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhaval Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      nav,
+      .navbar-brand,
+      body {
+        font-family: "Perfect DOS VGA 437";
+        font-size: 25px;
+      }
+      .nav-link,
+      .navbar-brand {
+        color: white;
+      }
+      .nav-link:hover {
+        color: rgb(67, 187, 56);
+      }
+      .navbar-brand:hover {
+        color: rgb(67, 187, 56);
+      }
+
+      .main-box {
+        background-color: rgb(236, 235, 232);
+        text-align: center;
+        border: 1px solid white;
+        box-shadow: 8px 8px 1px 1px #564c4c;
+      }
+      .pushable {
+        background: hsl(0, 0%, 0%);
+        border: none;
+        padding: 0px 5px 0px 0px;
+        cursor: pointer;
+        outline-offset: 4px;
+      }
+      .front {
+        display: block;
+        padding: 5px 10px;
+        font-size: 1.25rem;
+        background: hsl(150, 55%, 26%);
+        color: white;
+        transform: translateY(-6px);
+      }
+
+      .pushable:active .front {
+        transform: translateY(-2px);
+      }
+
+      input,
+      textarea {
+        width: 99%;
+        border: 3px solid black;
+        box-shadow: 1px 3px 1px 1px black;
+        margin-bottom: 5px;
+      }
+
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+
+      .list-group-item {
+        background-color: transparent;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .accordion-item,
+      .accordion-body {
+        background-color: transparent !important;
+        border: none !important;
+        padding: 0px !important;
+      }
+
+      .accordion {
+        --bs-accordion-bg: transparent;
+        --bs-accordion-active-color: black;
+        --bs-accordion-active-bg: transparent;
+        --bs-accordion-btn-padding-x: 3px;
+        --bs-accordion-btn-padding-y: 3px;
+      }
+
+      .accordion-button::after {
+        content: none;
+      }
+
+      ol {
+        list-style: "* ";
+      }
+      ol > li {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body
+    class="d-flex flex-column"
+    style="min-height: 100vh; background-color: rgb(44, 44, 78)"
+  >
+    <div
+      class="container-fluid"
+      style="width: 95%; flex: 1; margin-bottom: 10px"
+    >
+      <h4 style="color: white; width: 100%; text-align: center; margin: 10px">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-2">&lt;DhavalPatel&gt;</div>
+              <div class="col-lg-6"><i class="fa-regular fa-paper-plane"></i> pateldk@gmail.com</div>
+              <div class="col-lg-4"> <i class="fa-solid fa-mobile-retro"></i> Phone: 807-358-1805</div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </h4>
+
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="main-box">
+            <div
+              class="accordion"
+              id="accordionExample"
+              style="background-color: transparent"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <h1 style="width: 100%; text-align: center">Navigation</h1>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <a href=""> Home </a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href=""> Education </a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href=""> Experience </a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href=""> Project </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-box" style="margin-bottom: 15px"></div>
+        </div>
+        <div class="col-lg-8">
+          <div class="main-box">
+            <h1>Home</h1>
+          </div>
+          <div class="main-box" style="margin-bottom: 15px; padding: 7px;" id="home">
+            <p>Hello I'm Dhaval Patel</p>
+            <!-- <span id="typed"></span> -->
+            <p>
+              A passionate Full Stack Software Developer having an experience
+              of building Web and Mobile applications with JavaScript / Reactjs
+              / Nodejs / React Native and some other cool libraries and
+              frameworks.
+            </p>
+            <b>What I DO:</b>
+            <ol>
+              <li>
+                Develop highly interactive User Interfaces for
+                your web and mobile applications
+              </li>
+              <li>
+                Progressive Web Applications ( PWA ) in normal and SPA Stacks
+              </li>
+
+              <li>
+                Integration of third party services such as Firebase/ AWS /
+                Digital Ocean
+              </li>
+
+              <span style="font-size: 50px;">
+                
+                  <i class="fa-brands fa-html5"></i>
+                
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-solid fa-fire"></i>
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-flutter"></i>
+              </span>
+            </ol>
+          </div>
+
+          <!-- Education -->
+          <div class="main-box" style="margin-bottom: 15px; padding: 7px;" id="education">
+            <p>Degree Received</p>
+            <!-- <span id="typed"></span> -->
+             <!-- First Degree -->
+             <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4056jKhfdTNm9Ryo1RFbkaMeJgD7aeo1-yqG4iT1E-IwJYuR-HHmhNEkx39J5IOiQjY&usqp=CAU" alt="" style="width:100px; height: 100px; border-radius: 50%;">
+               </div>
+              </div>
+               <div class="col-lg-9" style="text-align: left;">
+                <h4>V.P & R.P.T.P SCIENCE COLLEGE </h4> <h4>From 2017 to 2020</h4>
+                <ol>
+                  <li>
+                     Logic building using 'C Programming' Language
+                  </li>
+                  <li>
+                    Object Oriented Programming using C++ and JAVA
+                  </li>
+                  <li>
+                    Database Management System using Oracle and FoxPro
+                  </li>
+                  <li>
+                    Low level Programming using Assembly Language
+                  </li>
+                  <li>
+                    WFA using Vb.NET and MySQL Server
+                  </li>
+                  <li>
+                    Web Development using PHP and PHPMyAdmin
+                  </li>
+                </ol>
+               </div>
+              
+             </div>
+              <hr>
+             <!-- Second Degree -->
+             <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Confederation_college_logo.jpg" alt="" style="width:100px; height: 100px; border-radius: 50%;">
+               </div>
+              </div>
+               <div class="col-lg-9" style="text-align: left;">
+                <h4>CONFEDERATION COLLEGE</h4> <h4>From 2021 to 2022</h4>
+                <ol>
+                  <li>
+                     Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+               </div>
+              
+             </div>
+          </div>
+          
+          <!-- Experience -->
+          <div class="main-box" style="margin-bottom: 15px; padding: 7px;" id="experience">
+            <p>Experience </p>
+            <!-- <span id="typed"></span> -->
+            
+            <!-- 1 EXP -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://teleco.ca/wp-content/uploads/2021/07/TELECO-Logo-Large.png" alt="" style="width:80px; height: 80px; border-radius: 0%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>IT Engineer</h4> <h4>From May-2024 to Present</h4>
+                <ol>
+                  <li>
+                    Customise HALO CRM 
+                  </li>
+                  <li>
+                    Object Oriented Programming using C++ and JAVA
+                  </li>
+                  <li>
+                    Database Management System using Oracle and FoxPro
+                  </li>
+                  <li>
+                    Low level Programming using Assembly Language
+                  </li>
+                  <li>
+                    WFA using Vb.NET and MySQL Server
+                  </li>
+                  <li>
+                    Web Development using PHP and PHPMyAdmin
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+              <hr>
+            <!-- 2 EXP -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://assets.stores.staples.ca/images/logo-staples.png" alt="" style="width:100px; height: 20px; margin-top: 40%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>STAPLES CANADA</h4> <h4>From 2023 to 2024</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+            <hr>
+
+            <!-- 3 EXP -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Confederation_college_logo.jpg" alt="" style="width:100px; height: 100px; border-radius: 50%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>CONFEDERATION COLLEGE</h4> <h4>From 2023 to Present</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+
+            <hr>
+            <!-- 4 EXP -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPMjfZ7O4ZiDDJgZwMiIgeUYCH19vTXObAkyFOMGmCkqIfunkaQWc3HOrA4Q8FvtmU29U&usqp=CAU" alt="" style="width:100px; height: 100px; border-radius: 50%; ">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>METS SOFTWARE SERVICES LTD</h4> <h4>From 2023 to 2024</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+            
+          </div>
+
+           <!-- Project -->
+           <div class="main-box" style="margin-bottom: 15px; padding: 7px;" id="project">
+            <p>Project </p>
+            <!-- <span id="typed"></span> -->
+            
+            <!-- 1 project -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://teleco.ca/wp-content/uploads/2021/07/TELECO-Logo-Large.png" alt="" style="width:80px; height: 80px; border-radius: 0%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>IT Engineer</h4> <h4>From May-2024 to Present</h4>
+                <ol>
+                  <li>
+                    Customise HALO CRM 
+                  </li>
+                  <li>
+                    Object Oriented Programming using C++ and JAVA
+                  </li>
+                  <li>
+                    Database Management System using Oracle and FoxPro
+                  </li>
+                  <li>
+                    Low level Programming using Assembly Language
+                  </li>
+                  <li>
+                    WFA using Vb.NET and MySQL Server
+                  </li>
+                  <li>
+                    Web Development using PHP and PHPMyAdmin
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+              <hr>
+            <!-- 2 project -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://assets.stores.staples.ca/images/logo-staples.png" alt="" style="width:100px; height: 20px; margin-top: 40%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>STAPLES CANADA</h4> <h4>From 2023 to 2024</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+            <hr>
+
+            <!-- 3 project -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Confederation_college_logo.jpg" alt="" style="width:100px; height: 100px; border-radius: 50%;">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>CONFEDERATION COLLEGE</h4> <h4>From 2023 to Present</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+
+            <hr>
+            <!-- 4 project -->
+            <div class="row">
+              <div class="col-lg-2" style="display: flex; text-align: center; justify-content: space-around; ">
+                <div class="main-box" style="width: 100px; height: 100px; border-radius: 50%; margin-left: 10px;     box-shadow: 1px 1px 8px 4px #564c4c;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPMjfZ7O4ZiDDJgZwMiIgeUYCH19vTXObAkyFOMGmCkqIfunkaQWc3HOrA4Q8FvtmU29U&usqp=CAU" alt="" style="width:100px; height: 100px; border-radius: 50%; ">
+              </div>
+              </div>
+              <div class="col-lg-9" style="text-align: left;">
+                <h4>METS SOFTWARE SERVICES LTD</h4> <h4>From 2023 to 2024</h4>
+                <ol>
+                  <li>
+                    Basic to advance Networking using Cisco CCNA
+                  </li>
+                  <li>
+                    MVC pattern pragramming using .NET framwork
+                  </li>
+                  <li>
+                    Database management using remote access to live MS-SQL server
+                  </li>
+                  <li>
+                    UI/UX design and its theory
+                  </li>
+                  <li>
+                    cloud computing 
+                  </li>
+                  <li>
+                    Web development using Wordpress and E-commerce store building using Shopify
+                  </li>
+                </ol>
+              </div>
+              
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="col-lg-2">
+          <div class="main-box">
+            <h1>Contact Me</h1>
+          </div>
+          <div class="main-box">
+            <form action="#" method="post" style="padding: 7px">
+              <label for="name" style="width: 100%; text-align: left"
+                ><span style="color: red">*</span>Your Name</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="off"
+                required
+              />
+
+              <label for="email" style="width: 100%; text-align: left"
+                ><span style="color: red">*</span>Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+
+              <label for="contact" style="width: 100%; text-align: left"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                name="contact"
+                id="contact"
+                autocomplete="off"
+              />
+
+              <label for="message" style="width: 100%; text-align: left"
+                ><span style="color: red">*</span>Message</label
+              >
+              <textarea name="message" id="message" required></textarea>
+
+              <button class="pushable">
+                <span class="front"> Submit </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <small
+        ><i style="color: white"
+          >Thank you for visiting my website :)
+        </i></small
+      >
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["A Web developer", "Mobile App Developer", "Instructor"],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>
